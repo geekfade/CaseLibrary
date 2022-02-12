@@ -1,6 +1,6 @@
 import HeaderAsideLayout from '@/layouts/HeaderAsideLayout';
 import NotFound from '@/pages/NotFound';
-import Dashboard from '@/pages/Dashboard';
+import Web from '@/pages/Web';
 
 const routerConfig = [
   {
@@ -48,9 +48,9 @@ const routerConfig = [
     path: '/',
     component: HeaderAsideLayout,
     children: [
-      { path: '/dashboard/analysis', component: Dashboard },
-      { path: '/dashboard/monitor', component: NotFound },
-      { path: '/dashboard/workplace', component: NotFound },
+      { path: '/Web/analysis', component: Web },
+      { path: '/Web/monitor', component: NotFound },
+      { path: '/Web/workplace', component: NotFound },
     ],
   },
   { path: '*', component: NotFound },

@@ -6,17 +6,17 @@ const headerMenuConfig = [];
 
 const asideMenuConfig = [
   {
-    path: '/dashboard',
-    name: 'HTML',
+    path: '/Web',
+    name: '网页',
     icon: 'el-icon-menu',
     children: [
       {
         path: '/analysis',
-        name: '分析页',
+        name: 'CSS',
       },
       {
         path: '/monitor',
-        name: '监控页',
+        name: 'JS',
       },
       {
         path: '/workplace',

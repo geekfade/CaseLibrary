@@ -46,7 +46,7 @@
   .scroll-container {
     width: 100%;
     height: 100%;
-    background-color: #00142a;
+    background: linear-gradient(to top, #005aa766, #fffde499);
 
     .scroll-wrapper {
       position: absolute;

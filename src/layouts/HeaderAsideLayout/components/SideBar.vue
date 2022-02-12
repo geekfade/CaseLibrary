@@ -4,7 +4,7 @@
       <img src="https://g808-1307802639.cos.ap-chengdu.myqcloud.com/Java/favicon.ico" width="40">
       <span class="site-name">CaseLibrary</span>
     </div>
-    <el-menu :show-timeout="200" mode="vertical" background-color="#00142a" text-color="hsla(0, 0%, 100%, .65)"
+    <el-menu :show-timeout="200" mode="vertical" background-color="#00142a" text-color="hsla(0, 0%, 100%, 0.8)"
       active-text-color="#409EFF">
       <template v-for="item in asideMenuConfig">
         <router-link v-if="!item.children" :to="item.path" :key="item.name">
@@ -59,7 +59,9 @@
     align-items: center;
     height: 64px;
     line-height: 64px;
-    background: #002140;
+    background: #B2FEFA;
+    background: -webkit-linear-gradient(to left, #0ED2F7, #B2FEFA);
+    background: linear-gradient(to left, #0ED2F7, #B2FEFA);
     color: #fff;
     text-align: center;
     font-size: 20px;
