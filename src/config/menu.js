@@ -7,7 +7,7 @@ const headerMenuConfig = [];
 const asideMenuConfig = [
   {
     path: '/dashboard',
-    name: 'Dashboard',
+    name: 'HTML',
     icon: 'el-icon-menu',
     children: [
       {
