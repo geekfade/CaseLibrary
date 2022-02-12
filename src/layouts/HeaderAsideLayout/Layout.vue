@@ -9,34 +9,39 @@
 </template>
 
 <script>
-import { NavBar, SideBar, AppMain } from './components';
-
-export default {
-  name: 'Layout',
-  components: {
+  import {
     NavBar,
     SideBar,
-    AppMain,
-  },
-};
+    AppMain
+  } from './components';
+
+  export default {
+    name: 'Layout',
+    components: {
+      NavBar,
+      SideBar,
+      AppMain,
+    },
+  };
 </script>
 
 <style lang="scss" scoped>
-.app-wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
+  .app-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
 
-.main-container {
-  min-height: 100vh;
-  transition: margin-left 0.28s;
-  margin-left: 256px;
-  background-color: #f0f2f5;
-}
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .main-container {
+    min-height: 100vh;
+    transition: margin-left 0.28s;
+    margin-left: 256px;
+    background-color: #f0f2f5;
+  }
 </style>
