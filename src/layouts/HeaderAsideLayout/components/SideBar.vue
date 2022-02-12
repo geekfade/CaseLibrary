@@ -2,7 +2,7 @@
   <scroll-bar>
     <div class="logo">
       <img src="https://g808-1307802639.cos.ap-chengdu.myqcloud.com/Java/favicon.ico" width="40">
-      <span class="site-name">ADMIN LITE</span>
+      <span class="site-name">CaseLibrary</span>
     </div>
     <el-menu :show-timeout="200" mode="vertical" background-color="#00142a" text-color="hsla(0, 0%, 100%, .65)"
       active-text-color="#409EFF">
