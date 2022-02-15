@@ -5,6 +5,7 @@ import 'normalize.css/normalize.css';
 import './styles/index.scss';
 import App from './App.vue';
 import router from './router';
+import './assets/icons/iconfont'
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
 

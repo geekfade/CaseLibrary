@@ -4,11 +4,11 @@ import Web from '@/pages/Web';
 
 const routerConfig = [
   {
-    path: '/table',
+    path: '/Vue',
     component: HeaderAsideLayout,
     children: [
-      { path: '/table/basic', component: NotFound },
-      { path: '/table/fixed', component: NotFound },
+      { path: '/Vue/basic', component: NotFound },
+      { path: '/Vue/fixed', component: NotFound },
     ],
   },
   {
@@ -48,9 +48,12 @@ const routerConfig = [
     path: '/',
     component: HeaderAsideLayout,
     children: [
-      { path: '/Web/analysis', component: Web },
-      { path: '/Web/monitor', component: NotFound },
-      { path: '/Web/workplace', component: NotFound },
+      { path: '/Web/Css', component: Web },
+      { path: '/Web/Js', component: NotFound },
+      { path: '/Web/Jq', component: NotFound },
+      { path: '/Web/3D', component: NotFound },
+      { path: '/Web/Three', component: NotFound },
+      { path: '/Web/Gasp', component: NotFound },
     ],
   },
   { path: '*', component: NotFound },

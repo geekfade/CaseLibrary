@@ -1,7 +1,7 @@
 <template>
   <scroll-bar>
     <div class="logo">
-      <img src="https://g808-1307802639.cos.ap-chengdu.myqcloud.com/Java/favicon.ico" width="40">
+      <img src="https://g808-1307802639.cos.ap-chengdu.myqcloud.com/CaseLibrary/favicon.ico" width="40">
       <span class="site-name">CaseLibrary</span>
     </div>
     <el-menu :show-timeout="200" mode="vertical" background-color="#00142a" text-color="hsla(0, 0%, 100%, 0.8)"
@@ -9,19 +9,27 @@
       <template v-for="item in asideMenuConfig">
         <router-link v-if="!item.children" :to="item.path" :key="item.name">
           <el-menu-item :index="item.path">
-            <i v-if="item.icon" :class="item.icon" />
+            <!-- <i v-if="item.icon" :class="item.icon" /> -->
+            <svg class="icon" aria-hidden="true">
+              <use :href="item.icon"></use>
+            </svg>
             <span v-if="item.name" slot="title">{{ item.name }}</span>
           </el-menu-item>
         </router-link>
 
         <el-submenu v-else :index="item.name || item.path" :key="item.name">
           <template slot="title">
-            <i v-if="item && item.icon" :class="item.icon" />
+            <svg class="icon" aria-hidden="true">
+              <use :href="item.icon"></use>
+            </svg>
             <span v-if="item && item.name" slot="title">{{ item.name }}</span>
           </template>
           <template v-for="child in item.children" v-if="!child.hidden">
             <router-link :to="item.path + child.path" :key="child.name">
               <el-menu-item :index="item.path + child.path">
+                <svg class="icon" aria-hidden="true">
+                  <use :href="child.icon"></use>
+                </svg>
                 <span v-if="child && child.name" slot="title">{{ child.name }}</span>
               </el-menu-item>
             </router-link>
@@ -66,6 +74,13 @@
     text-align: center;
     font-size: 20px;
     font-weight: 600;
+    overflow: hidden;
+  }
+
+  .icon {
+    width: 2em;
+    height: 1.3em;
+    fill: currentColor;
     overflow: hidden;
   }
 

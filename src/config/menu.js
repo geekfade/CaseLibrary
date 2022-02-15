@@ -7,27 +7,45 @@ const headerMenuConfig = [];
 const asideMenuConfig = [
   {
     path: '/Web',
-    name: '网页',
-    icon: 'el-icon-menu',
+    name: 'Web Page',
+    icon: '#el-icon-CaseLibrary-wangye',
     children: [
       {
-        path: '/analysis',
-        name: 'CSS',
+        path: '/Css',
+        name: 'Css',
+        icon: '#el-icon-CaseLibrary-css',
       },
       {
-        path: '/monitor',
-        name: 'JS',
+        path: '/Js',
+        name: 'Js',
+        icon: '#el-icon-CaseLibrary-js',
       },
       {
-        path: '/workplace',
-        name: '工作台',
+        path: '/Jq',
+        name: 'Jq',
+        icon: '#el-icon-CaseLibrary-jQuery',
+      },
+      {
+        path: '/3D',
+        name: '3D',
+        icon: '#el-icon-CaseLibrary-d',
+      },
+      {
+        path: '/Three',
+        name: 'Three',
+        icon: '#el-icon-CaseLibrary-cloud_three-copy',
+      },
+      {
+        path: '/Gasp',
+        name: 'Gasp',
+        icon: '#el-icon-CaseLibrary-greensock',
       },
     ],
   },
   {
-    path: '/table',
-    name: '表格页',
-    icon: 'el-icon-date',
+    path: '/Vue',
+    name: 'Vue',
+    icon: '#el-icon-CaseLibrary-Vue',
     children: [
       {
         path: '/basic',
