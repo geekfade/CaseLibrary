@@ -53,7 +53,7 @@ const asideMenuConfig = [
         icon: '#el-icon-CaseLibrary-donghuapian',
       },
       {
-        path: '/Special effects',
+        path: '/Specialeffects',
         name: 'effects',
         icon: '#el-icon-CaseLibrary-texiao',
       },

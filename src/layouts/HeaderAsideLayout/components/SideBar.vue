@@ -9,7 +9,6 @@
       <template v-for="item in asideMenuConfig">
         <router-link v-if="!item.children" :to="item.path" :key="item.name">
           <el-menu-item :index="item.path">
-            <!-- <i v-if="item.icon" :class="item.icon" /> -->
             <svg class="icon" aria-hidden="true">
               <use :href="item.icon"></use>
             </svg>
