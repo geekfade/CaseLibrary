@@ -48,12 +48,14 @@ const asideMenuConfig = [
     icon: '#el-icon-CaseLibrary-Vue',
     children: [
       {
-        path: '/basic',
-        name: '基础表格',
+        path: '/animation',
+        name: '动画',
+        icon: '#el-icon-CaseLibrary-donghuapian',
       },
       {
-        path: '/fixed',
-        name: '固定表格',
+        path: '/Special effects',
+        name: '特效',
+        icon: '#el-icon-CaseLibrary-texiao',
       },
     ],
   },

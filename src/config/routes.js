@@ -7,8 +7,8 @@ const routerConfig = [
     path: '/Vue',
     component: HeaderAsideLayout,
     children: [
-      { path: '/Vue/basic', component: NotFound },
-      { path: '/Vue/fixed', component: NotFound },
+      { path: '/Vue/animation', component: NotFound },
+      { path: '/Vue/Special effects', component: NotFound },
     ],
   },
   {
