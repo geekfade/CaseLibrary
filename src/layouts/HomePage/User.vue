@@ -1,6 +1,6 @@
 <template>
     <div :class="isActive?'right-panel-active':''" class="dowebok" id="dowebok">
-        <Login @github="setgithub" :Users="Users" />
+        <Login @github="SetGithub" :Users="Users" />
         <Register />
         <div class="overlay-container">
             <div class="overlay">
@@ -19,6 +19,7 @@
     </div>
 </template>
 <script>
+    import axios from "axios";
     import {
         Login,
         Register
@@ -42,12 +43,33 @@
             Login() {
                 this.isActive = false;
             },
-            setgithub() {
-                const client_id = 'Iv1.e87a7f5b832fe70b';
-                const authorize_uri = 'https://github.com/login/oauth/authorize';
-                const redirect_uri = 'http://caselibrary.top/oauth/redirect';
-                const User = `${authorize_uri}?client_id=${client_id}&redirect_uri=${redirect_uri}`;
+            async SetGithub() {
+                const clientID = 'Iv1.dd61b9c70372fd46'
+                const clientSecret = '00891959adb6a9d54ca9316e04dcb80d08004153'
+                const tokenResponse = await axios({
+                    method: 'post',
+                    url: 'https://github.com/login/oauth/access_token?' +
+                        `client_id=${clientID}&` +
+                        `client_secret=${clientSecret}&`,
+                    headers: {
+                        accept: 'application/json'
+                    }
+                });
                 this.Users = User;
+                const accessToken = tokenResponse.data.access_token;
+                console.log(`access token: ${accessToken}`);
+
+                // const result = await axios({
+                //     method: 'get',
+                //     url: `https://api.github.com/user`,
+                //     headers: {
+                //         accept: 'application/json',
+                //         Authorization: `token ${accessToken}`
+                //     }
+                // });
+                // console.log(result.data);
+                // const name = result.data.name;
+
             }
         }
     }

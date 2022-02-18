@@ -3,7 +3,7 @@
         <form action="#">
             <h1>登录</h1>
             <div class="social-container">
-                <a href="#" class="social" @click="getgithub">
+                <a :href="Github" class="social" @click="GetGithub">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#el-icon-CaseLibrary-GitHub"></use>
                     </svg></a>
@@ -29,8 +29,13 @@
 <script>
     export default {
         name: 'Login',
+        data() {
+            return {
+                Github: '#',
+            }
+        },
         props: {
-            setgithub: {
+            SetGithub: {
                 type: Function,
                 default: null,
             },
@@ -40,9 +45,9 @@
             }
         },
         methods: {
-            getgithub() {
-                console.log(this.setgithub);
-                if (this.setgithub) {}
+            GetGithub() {
+                // this.Github = this.Users
+                this.$emit('github')
             }
         },
     };
