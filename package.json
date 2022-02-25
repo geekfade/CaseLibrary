@@ -13,6 +13,7 @@
     "element-ui": "^2.3.6",
     "koa": "^2.13.4",
     "normalize.css": "^8.0.0",
+    "tencentcloud-sdk-nodejs": "^4.0.296",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1"
   },
